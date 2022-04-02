@@ -1,0 +1,12 @@
+{
+  "name": "copeforjare",
+  "version": "1.0.0",
+  "main": "app.js",
+  "license": "MIT",
+  "dependencies": {
+    "@solana/spl-token": "^0.2.0",
+    "@solana/web3.js": "^1.37.0",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.3"
+  }
+}
