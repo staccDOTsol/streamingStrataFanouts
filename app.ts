@@ -1,9 +1,13 @@
 import { clusterApiUrl, Connection, Keypair, LAMPORTS_PER_SOL, PublicKey } from '@solana/web3.js';
 import { createMint, getOrCreateAssociatedTokenAccount, mintTo, transfer } from '@solana/spl-token';
 
-const monthlyCopePayroll = 50 * 10 ** 6;//17000 * 10 ** 6;
+const monthlyCopePayroll = parseInt(process.env.amount) * 10 ** 6;//17000 * 10 ** 6;
  
-const key = []
+const akey = process.env.key.split(',')
+var key = [] 
+for (var k in akey){
+    key.push(parseInt(akey[k]))
+}
 async function theFunction(){
     try{
      // Connect to cluster

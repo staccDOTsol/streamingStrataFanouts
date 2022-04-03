@@ -6,6 +6,7 @@
   "dependencies": {
     "@solana/spl-token": "^0.2.0",
     "@solana/web3.js": "^1.37.0",
+    "@strata-foundation/react": "^3.4.5",
     "ts-node": "^10.7.0",
     "typescript": "^4.6.3"
   }
